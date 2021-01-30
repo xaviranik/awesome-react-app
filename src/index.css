@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f5f8;
+  color: #222;
+}
+
+.book {
+  margin: 16px;
+  padding: 16px;
+  background: white;
+}

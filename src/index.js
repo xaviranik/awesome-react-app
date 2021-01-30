@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDom from "react-dom";
 
+// Styling
+import "./index.css";
+
 const Booklist = () => {
   return (
     <>
@@ -12,7 +15,7 @@ const Booklist = () => {
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image />
       <Title />
       <Author />
@@ -30,7 +33,9 @@ const Image = () => {
 };
 
 const Title = () => {
-  return <h2>A Promised Land</h2>;
+  return (
+    <h2 style={{ color: "#617d98", fontSize: "2rem" }}>A Promised Land</h2>
+  );
 };
 
 const Author = () => {
