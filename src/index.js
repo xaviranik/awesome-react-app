@@ -1,8 +1,13 @@
 import React from "react";
 import ReactDom from "react-dom";
 
-ReactDom.render(<Greeting />, document.getElementById("root"));
+const Greeting = () => {
+  return (
+    <>
+      <div className="test">Hello World</div>
+      <h1>This is awesome!</h1>
+    </>
+  );
+};
 
-function Greeting() {
-  return <h4>Lol</h4>;
-}
+ReactDom.render(<Greeting />, document.getElementById("root"));
