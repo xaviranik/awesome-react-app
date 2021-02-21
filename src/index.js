@@ -26,7 +26,7 @@ const Booklist = () => {
   return (
     <>
       {books.map((book) => {
-        return <Book key={book.id} book={book} />;
+        return <Book key={book.id} {...book} />;
       })}
     </>
   );
@@ -35,9 +35,9 @@ const Booklist = () => {
 const Book = (props) => {
   return (
     <article className="book">
-      <img src={props.book.img} alt="img" />
-      <h1>{props.book.title.toUpperCase()}</h1>
-      <h3>{props.book.author}</h3>
+      <img src={props.img} alt="img" />
+      <h1>{props.title.toUpperCase()}</h1>
+      <h3>{props.author}</h3>
     </article>
   );
 };
