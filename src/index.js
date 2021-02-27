@@ -33,11 +33,26 @@ const Booklist = () => {
 };
 
 const Book = (props) => {
+  // attribute, eventHandler
+  // onClick, onMouseHover
+
+  const clickHandler = (author) => {
+    alert("Hello User: " + author);
+  };
+
   return (
-    <article className="book">
+    <article
+      className="book"
+      onMouseOver={() => {
+        console.log("Title: ", props.title);
+      }}
+    >
       <img src={props.img} alt="img" />
       <h1>{props.title.toUpperCase()}</h1>
       <h3>{props.author}</h3>
+      <button type="button" onClick={() => clickHandler(props.author)}>
+        Add to cart
+      </button>
     </article>
   );
 };
